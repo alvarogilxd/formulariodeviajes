@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de viaje</title>
+    <link rel="stylesheet" href="stilos.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulario de viaje</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Datos del cliente</legend>
+
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+
+                <label for="correo">correo electronico:</label>
+                <input type="email" id="correo" name="correo" required placeholder="Ejemplo@correo.com">
+
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{8}" placeholder="12345678">
+
+                <label for="nivel">A que se debe este viaje</label>
+                <select id="nivel" name="nivel" required>
+                    <option value="">--Seleccione--</option>
+                    <option value="Viaje Escolar">Viaje Escolar</option>
+                    <option value="Viaje de trabajo">Viaje de trabajo</option>
+                    <option value="Viaje Familiar">Viaje Familiar</option>
+                    <option value="Viaje Vacacional">Viaje Vacacional</option>
+                    <option value="Luna de Miel">Luna de Miel</option>
+                </select>
+
+                <label for="informacion">Dinos la informacion de este viaje</label>
+                <textarea name="info" id="info" rows="5" required placeholder="Informacion aqui..."></textarea>
+
+                </div>
+            </fieldset>
+            <div class="form2">
+            <fieldset>
+                <legend>Pais de destino</legend>
+
+                <label for="Pais">A que pais vas:</label>
+                <select id="pais" name="pais" required>
+                    <option value="">--Seleccione el pais--</option>
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="EE.UU">EE.UU</option>
+                    <option value="España">España</option>
+                    <option value="Canada">Canada</option>
+                </select>
+
+                <label for="salida">Fecha de salida:</label>
+                <input type="date" id="salida" name="salida" required>
+
+                <label for="regreso">Fecha de regreso:</label>
+                <input type="date" id="Regreso" name="Regreso" required>
+
+                <label for="Cantidad">Cantidad de personas:</label>
+                <input type="number" id="Cantidad" name="Cantidad" required>
+
+                <label for="paquete">Tipo de paquete</label>
+                <label>
+                <input type="radio" name="paquete" id="paquete" value="Economico">Economico
+                </label>
+                <label>
+                <input type="radio" name="paquete" id="paquete" value="Estandar">Estandar
+                </label>
+                <label>
+                <input type="radio" name="paquete" id="paquete" value="Vip">Vip
+                </label>
+                </div>
+                </fieldset>
+
+                <div class="form3">
+                 <fieldset>
+                    <legend>Preferencias y comentarios</legend>
+                
+                <label for="Servicios">Servicios adicionales</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="Servicios" value="Hotel">Hotel</label>
+
+                    <label><input type="checkbox" name="Servicios" value="Transporte">Transporte</label>
+
+                    <label><input type="checkbox" name="Servicios" value="Seguro">Seguros</label>
+
+                    <label><input type="checkbox" name="Servicios" value="Guia">Guia</label>
+                    
+                    <label><input type="checkbox" name="Servicios" value="Recorrido">Recorrido</label>
+                </div>
+
+                
+                <label for="Comentarios">Comentarios del cliente</label>
+                <textarea name="comentarios" id="comentarios" rows="5" placeholder="Escribe tu comentario aqui..." required></textarea>
+
+                <label for="pasaporte">Subir archivo de pasaporte  escaneados (PDF) opcional:</label>
+                <input type="file" id="archivo" name="archivo" accept=".pdf">
+                </div>
+            </fieldset>
+
+            <div class="botones">
+                
+                <button type="submit">Enviar Formulario</button>
+
+                <button type="reset">Limpiar Formulario</button>
+                
+            </div>
+        </form>
+    </div>
+    <audio autoplay controls loop>
+        <source src="audiooceano.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

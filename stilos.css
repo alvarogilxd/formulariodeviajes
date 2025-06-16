@@ -1,0 +1,122 @@
+* { 
+box-sizing: border-box; 
+font-family: 'Segoe UI', sans-serif; 
+} 
+body { 
+background-image: url(https://cdn.wallpapersafari.com/24/22/9Xixm6.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+margin: 0; 
+padding: 20px; 
+}
+.form-container { 
+max-width: 700px; 
+margin: auto; 
+background-color: transparent; 
+padding: 30px; 
+border-radius: 15px; 
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+} 
+h1 { 
+text-align: center; 
+color: black; 
+} 
+form fieldset { 
+border: 1px solid #ccc; 
+padding: 20px; 
+margin-bottom: 20px; 
+border-radius: 10px; 
+} 
+legend { 
+font-weight: bold; 
+color: rgba(255, 255, 255, 0.981); 
+} 
+label { 
+display: block; 
+margin: 10px 0 5px;
+font-weight: 500;
+}
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="date"], 
+select, 
+textarea, 
+input[type="file"] { 
+width: 100%; 
+padding: 10px; 
+margin-bottom: 15px; 
+border: 1px solid #ccc; 
+border-radius: 8px; 
+font-size: 14px; 
+background-color: transparent;
+} 
+.radio-group, 
+.checkbox-group { 
+margin: 10px 0; 
+} 
+.radio-group label, 
+.checkbox-group label { 
+display: inline-block; 
+margin-right: 15px; 
+} 
+textarea {
+    resize: vertical;
+    background-color: transparent;
+    border-color: black;
+}
+
+.botones { 
+display: flex; 
+justify-content: space-between; 
+margin-top: 20px; 
+} 
+button { 
+padding: 12px 25px; 
+background-color: #0bf7e7; 
+color: white; 
+border: none; 
+border-radius: 10px; 
+cursor: pointer; 
+transition: background-color 0.3s; 
+transition: color 0.3s;
+} 
+button:hover { 
+    background-color: rgba(52, 152, 219, 0.8); 
+    color: rgba(236, 240, 241, 1);
+} 
+ 
+input:focus, 
+select:focus, 
+textarea:focus { 
+border-color: #003366; 
+outline: none; 
+}
+input:invalid { 
+border-color: rgb(0, 0, 0); 
+}
+fieldset{
+    background-color: transparent;
+}
+.form2{
+    max-width: 700px; 
+    margin: auto; 
+background-color: transparent; 
+padding: 30px; 
+border-radius: 15px; 
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+margin-top: 50px; 
+}
+.form3{
+    max-width: 700px; 
+    margin: auto; 
+background-color: transparent; 
+padding: 30px; 
+border-radius: 15px; 
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+margin-top: 50px; 
+}
+::placeholder{
+    color: black;
+}
+
